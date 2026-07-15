@@ -15,3 +15,10 @@ const server = http.createServer((req, res) => {
 server.listen(3001 , ()=>{
     console.log('running on: http://localhost:3001')
 })
+/*The headers you'll actually deal with constantly:
+Content-Type — tells the receiver what format the body is in.
+
+application/json — JSON data
+text/html — HTML page
+text/plain — plain text
+multipart/form-data — file upload*/
