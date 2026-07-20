@@ -17,3 +17,22 @@ program
   });
 
 program.parse();
+
+
+
+const fs = require("fs");
+
+fs.mkdirSync(projectName);
+fs.mkdirSync(`${projectName}/controllers`);
+fs.mkdirSync(`${projectName}/routes`);
+fs.mkdirSync(`${projectName}/middleware`);
+fs.mkdirSync(`${projectName}/config`);
+
+
+// run node index.js create twitter-downloader
+// it will create twitter-downloader/
+
+//controllers/
+//routes/
+//middleware/
+//config/
