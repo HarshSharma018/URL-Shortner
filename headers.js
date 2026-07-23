@@ -22,3 +22,6 @@ application/json — JSON data
 text/html — HTML page
 text/plain — plain text
 multipart/form-data — file upload*/
+
+//The key mental model: CORS is enforced by the browser, not your server. Your server always processes the request fine — it's the browser that looks at these response headers and decides whether to let your frontend JS read the response. That's why Postman/curl never show CORS errors — only browsers enforce it.
+//Say "next" when ready for Status Codes.
