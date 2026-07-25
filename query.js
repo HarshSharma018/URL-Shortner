@@ -46,4 +46,4 @@ console.log(req.query.page);        // '2' (string, NOT number 2)
 console.log(req.query.page === 2);  // false!
 Classic bug: doing if (req.query.page > 5) works by accident (JS coerces),
  but req.query.page === 2 silently fails. Always explicitly convert:
- const page = parseInt(req.query.page) || 1; // fallback to 1 if missing/invalid
+ const page = parseInt(req.query.page) || 1; // fallback to 1 if missing/invalid*/
