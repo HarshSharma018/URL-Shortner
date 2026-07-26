@@ -19,3 +19,11 @@ app.get('/users/:id', async (req, res) => {
   }
   res.json(user);
 });
+
+
+
+//6. Wildcard/catch-all routes (used for 404 handlers or SPA fallback):
+
+app.get('*', (req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
