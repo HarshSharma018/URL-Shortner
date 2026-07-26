@@ -1,4 +1,5 @@
-const express = require('express');
+// this is just a example code for understanding
+// const express = require('express');
 const app = express();
 
 app.use(express.json());
@@ -27,3 +28,4 @@ app.get('/users/:id', async (req, res) => {
 app.get('*', (req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
+
